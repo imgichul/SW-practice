@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>판매글 등록 - Campus Market</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Campus Market</h1>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="posts.html">판매글 목록</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>판매글 등록</h2>
+    <form id="postForm">
+      <input type="text" id="postTitle" placeholder="제목">
+      <input type="number" id="postPrice" placeholder="가격">
+      <select id="postCategory">
+        <option value="도서">도서</option>
+        <option value="전자기기">전자기기</option>
+        <option value="생활용품">생활용품</option>
+      </select>
+      <textarea id="postDescription" placeholder="설명"></textarea>
+      <button type="submit">등록</button>
+    </form>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script src="js/posts.js"></script>
+</body>
+</html>

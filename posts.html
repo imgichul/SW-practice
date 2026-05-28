@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>판매글 목록 - Campus Market</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Campus Market</h1>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="post-new.html">판매글 등록</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>판매글 목록</h2>
+
+    <section id="searchArea">
+      <input type="text" id="searchInput" placeholder="물품명 검색">
+      <select id="categoryFilter">
+        <option value="">전체 카테고리</option>
+        <option value="도서">도서</option>
+        <option value="전자기기">전자기기</option>
+        <option value="생활용품">생활용품</option>
+      </select>
+      <select id="statusFilter">
+        <option value="">전체 상태</option>
+        <option value="판매중">판매중</option>
+        <option value="예약중">예약중</option>
+        <option value="거래완료">거래완료</option>
+      </select>
+    </section>
+
+    <section id="postList">
+      <!-- 판매글 목록이 JavaScript로 출력될 영역 -->
+    </section>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script src="js/posts.js"></script>
+</body>
+</html>
